@@ -1,6 +1,7 @@
 import express from 'express';
 import models from '../models.js';
 const User = models.User;
+import CryptoJS from 'crypto-js';
 const router = express.Router();
 
 router.post('/test', (req, res) => {
@@ -19,4 +20,4 @@ router.post('/test', (req, res) => {
   })
 });
 
-export default router; 
+export default router;
